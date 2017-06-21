@@ -1,0 +1,32 @@
+valor = float(input())
+
+r0 = round((valor%100),2)
+r1 = round((r0%50),2)
+r2 = round((r1%20),2)
+r3 = round((r2%10),2)
+r4 = round((r3%5),2)
+r5 = round((r4%2),2)
+
+rm0 = round((r5%1),2)
+rm1 = round((rm0%0.50),2)
+rm2 = round((rm1%0.25),2)
+rm3 = round((rm2%0.10),2)
+rm4 = round((rm3%0.05),2)
+rm5 = round((rm4%0.01),2)
+
+print ("NOTAS:")
+print ("%d nota(s) de R$ 100.00" % (valor/100))
+print ("%d nota(s) de R$ 50.00" % (r0/50))
+print ("%d nota(s) de R$ 20.00" % (r1/20))
+print ("%d nota(s) de R$ 10.00" % (r2/10))
+print ("%d nota(s) de R$ 5.00" % (r3/5))
+print ("%d nota(s) de R$ 2.00" % (r4/2))
+print ("MOEDAS:")
+print ("%d moeda(s) de R$ 1.00" % (r5/1))
+print ("%d moeda(s) de R$ 0.50" % (rm0/0.50))
+print ("%d moeda(s) de R$ 0.25" % (rm1/0.25))
+print ("%d moeda(s) de R$ 0.10" % (rm2/0.10))
+print ("%d moeda(s) de R$ 0.05" % (rm3/0.05))
+print ("%d moeda(s) de R$ 0.01" % (rm4/0.01))
+
+#Mateus Sousa
